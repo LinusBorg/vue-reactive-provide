@@ -1,12 +1,51 @@
 <template>
   <div id="app">
+    <label for="">
+      name: <input type="text" v-model="name"> <br>
+    </label>
+    <label for="">
+      Message: <input type="text" v-model="msg"> <br>
+    </label>
+    <label for="">
+      Filter items: <input type="text" v-model="filter"> <br>
+    </label>
+    <hr>
+    <div class="row">
+      <TestMixin :name="name" :msg="msg" :filter="filter">
+        <TestChild />
+      </TestMixin>
+
+      <TestOption :name="name" :msg="msg" :filter="filter">
+        <TestChild />
+      </TestOption>
+
+      <TestMixin :name="name" :msg="msg" :filter="filter">
+        <TestInherit />
+      </TestMixin>
+    </div>
+
   </div>
 </template>
 
 <script>
+import TestChild from '@/components/TestChild'
+import TestInherit from '@/components/TestInherit'
+import TestMixin from '@/components/TestMixin'
+import TestOption from '@/components/TestOption'
+
 export default {
   name: 'app',
-  components: {},
+  components: {
+    TestChild,
+    TestInherit,
+    TestMixin,
+    TestOption,
+  },
+  data: () => ({
+    name: 'Tom Jones',
+    msg: 'This is a message',
+    filter: '',
+  }),
 }
 </script>
 
@@ -18,5 +57,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row > div {
+  min-width: 300px;
+  margin: auto;
 }
 </style>
