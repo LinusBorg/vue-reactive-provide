@@ -24,6 +24,7 @@
     "vue": ">=2.5"
   },
   "devDependencies": {
+    "vue": "^2.5.17",
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-plugin-unit-jest": "^3.0.1",
