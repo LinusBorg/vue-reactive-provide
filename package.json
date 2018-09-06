@@ -12,6 +12,7 @@
     "build": "vue-cli-service build --target lib src/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit:ci": "vue-cli-service test:unit --coverage --coverageReporters=text-lcov | coveralls",
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
   "main": "dist/vue-dynamic-provide.common",
@@ -48,5 +49,8 @@
       "vue-cli-service lint",
       "git add"
     ]
+  },
+  "dependencies": {
+    "coveralls": "^3.0.2"
   }
 }
