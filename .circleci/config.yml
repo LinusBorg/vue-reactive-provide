@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  build_test:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.11
@@ -34,4 +34,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
+      - run: yarn build
       - run: yarn test:unit --coverage
