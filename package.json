@@ -1,16 +1,26 @@
 {
   "name": "vue-dynamic-provide",
-  "version": "0.1.0",
+  "version": "1.0.0-beta-1",
+  "repository": "https://github.com/LinusBorg/vue-dynamic-provide",
+  "author": {
+    "name": "Thorsten Lünborg",
+    "url": "ttps://github.com/LinusBorg/"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib src/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
-  "dependencies": {
-    "vue": "^2.5.17"
+  "main": "dist/vue-dynamic-provide.common",
+  "browser": "dist/vue-dynamic-provide.umd",
+  "files": [
+    "/src"
+  ],
+  "peerDependencies": {
+    "vue": ">=2.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",

@@ -1,0 +1,6 @@
+/.vscode
+/tests
+/coverage
+/public
+/src/components
+/src/main.js
