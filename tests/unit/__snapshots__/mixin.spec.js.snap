@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mixin functionality created correct component options with \`inheritAs\` 1`] = `
+Object {
+  "beforeCreate": [Function],
+  "computed": Object {
+    "test": [Function],
+  },
+  "inject": Object {
+    "$test": "test",
+  },
+  "provide": [Function],
+  "watch": Object {
+    "test": Object {
+      "handler": [Function],
+      "immediate": true,
+    },
+  },
+}
+`;
+
+exports[`Mixin functionality creates correct component options 1`] = `
+Object {
+  "beforeCreate": [Function],
+  "computed": Object {
+    "test": [Function],
+  },
+  "inject": undefined,
+  "provide": [Function],
+  "watch": Object {
+    "test": Object {
+      "handler": [Function],
+      "immediate": true,
+    },
+  },
+}
+`;

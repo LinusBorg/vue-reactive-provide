@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Plugin createGlobalMixin: creates mixin with functional beforeCreate hook 1`] = `
+Object {
+  "computed": Object {
+    "test": [Function],
+  },
+  "dynamicProvide": Object {
+    "include": Array [
+      "msg",
+    ],
+    "name": "test",
+  },
+  "inject": Object {},
+  "provide": [Function],
+}
+`;

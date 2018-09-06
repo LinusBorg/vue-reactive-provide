@@ -35,6 +35,7 @@ export default function({
             ...pickIf(listeners, this.$listeners),
           }
         } catch (_) {
+          /* istanbul ignore next */
           result = {}
         }
         return result
@@ -43,9 +44,9 @@ export default function({
     watch: {
       [name]: {
         immediate: true,
-        handler(val) {
+        handler(val = {}) {
           const data = this[internalDataName]
-          Object.keys(val || {}).forEach(key => {
+          Object.keys(val).forEach(key => {
             if (data.hasOwnProperty(key)) {
               data[key] = val[key]
             } else {

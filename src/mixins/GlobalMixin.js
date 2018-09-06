@@ -16,6 +16,7 @@ export const createGlobalMixin = ({ name = 'dynamicProvide' } = {}) => ({
       options = options.call(this)
     }
 
+    /* istanbul ignore next */
     if (typeof options !== 'object') return
 
     const { beforeCreate, provide, inject, computed, watch } = DynamicProvide(
