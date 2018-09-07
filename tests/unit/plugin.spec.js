@@ -1,6 +1,10 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import DynamicProvide from '../../src'
 import { createGlobalMixin } from '../../src/mixins/GlobalMixin'
+
+const testProd = !!process.env.VUE_APP_TEST_PROD
+const DynamicProvide = testProd
+  ? require('../../dist/vue-dynamic-provide.common').default
+  : require('../../src').default
 
 function mountWithPlugin(component, options) {
   const _Vue = createLocalVue()
