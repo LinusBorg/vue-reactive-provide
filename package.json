@@ -10,9 +10,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib src/index.js",
+    "build:analyze": "V_APP_ANALYZE=1 vue-cli-service build --target lib --name VueDynamicProvide src/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:unit:ci": "vue-cli-service test:unit --coverage --coverageReporters=text-lcov | coveralls",
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
   "main": "dist/vue-dynamic-provide.common",
@@ -24,7 +24,6 @@
     "vue": ">=2.5"
   },
   "devDependencies": {
-    "vue": "^2.5.17",
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-plugin-unit-jest": "^3.0.1",
@@ -33,9 +32,12 @@
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^23.0.1",
+    "coveralls": "^3.0.2",
     "lint-staged": "^7.2.2",
     "prettier-eslint": "^8.8.2",
-    "vue-template-compiler": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-bundle-analyzer": "^2.13.1"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -49,8 +51,5 @@
       "vue-cli-service lint",
       "git add"
     ]
-  },
-  "dependencies": {
-    "coveralls": "^3.0.2"
   }
 }
