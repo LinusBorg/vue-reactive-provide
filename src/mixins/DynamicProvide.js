@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import pick from 'lodash-es/pick'
+import { pick } from '@/utils'
 
 export default function({
   name = 'providePlus',
