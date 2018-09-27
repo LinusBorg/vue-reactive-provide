@@ -28,10 +28,10 @@
 </template>
 
 <script>
-import TestChild from '@/components/TestChild'
-import TestInherit from '@/components/TestInherit'
-import TestMixin from '@/components/TestMixin'
-import TestOption from '@/components/TestOption'
+import TestChild from '#app/components/TestChild'
+import TestInherit from '#app/components/TestInherit'
+import TestMixin from '#app/components/TestMixin'
+import TestOption from '#app/components/TestOption'
 
 export default {
   name: 'app',
