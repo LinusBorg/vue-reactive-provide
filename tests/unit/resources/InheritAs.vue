@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import DynamicProvide from '@/mixins/DynamicProvide'
+import DynamicProvide from '#lib/mixins/DynamicProvide'
 import Basic from './Basic'
 import Child from './Child'
 

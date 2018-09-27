@@ -6,7 +6,7 @@
 
 <script>
 import TestChild from './TestChild'
-import DynamicProvide from '@/mixins/DynamicProvide'
+import DynamicProvide from '#lib/mixins/DynamicProvide'
 
 export default {
   name: 'testInherit',

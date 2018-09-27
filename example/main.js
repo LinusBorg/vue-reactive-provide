@@ -5,7 +5,7 @@
 
 import Vue from 'vue'
 import App from './App.vue'
-import DynamicProvide from './'
+import DynamicProvide from '#lib'
 
 Vue.use(DynamicProvide)
 

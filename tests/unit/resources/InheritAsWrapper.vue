@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import DynamicProvide from '@/mixins/DynamicProvide'
+import DynamicProvide from '#lib/mixins/DynamicProvide'
 import InheritAs from './InheritAs'
 import Child from './Child'
 export default {

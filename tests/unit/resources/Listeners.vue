@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import DynamicProvide from '@/mixins/DynamicProvide'
+import DynamicProvide from '#lib/mixins/DynamicProvide'
 import Child from './Child'
 export default {
   name: 'Props',

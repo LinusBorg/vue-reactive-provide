@@ -1,8 +1,9 @@
 import { mount } from '@vue/test-utils'
 const testProd = !!process.env.VUE_APP_TEST_PROD
+
 const DynamicProvide = testProd
   ? require('../../dist/vue-dynamic-provide.common').DynamicProvideMixin
-  : require('../../src').DynamicProvideMixin
+  : require('../../lib').DynamicProvideMixin
 
 describe('Mixin functionality', () => {
   it('creates correct component options', () => {

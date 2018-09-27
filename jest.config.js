@@ -7,7 +7,7 @@ module.exports = {
       'jest-transform-stub',
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
+    '^#lib/(.*)$': '<rootDir>/lib/$1',
   },
   snapshotSerializers: ['jest-serializer-vue'],
   testMatch: [
