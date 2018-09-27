@@ -14,6 +14,8 @@
     "build:analyze": "V_APP_ANALYZE=1 vue-cli-service build --target lib --name VueDynamicProvide src/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit:prod": "VUE_APP_TEST_PROD=1 vue-cli-service test:unit --coverage",
+    "test:unit:ci": "vue-cli-service test:unit --coverage && cat ./coverage/lcov-report/lcov.info > ./node_modules/.bin/coveralls",
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
   "main": "dist/vue-dynamic-provide.common",
