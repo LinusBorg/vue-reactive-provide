@@ -1,6 +1,8 @@
 import { mount } from '@vue/test-utils'
 const testProd = !!process.env.VUE_APP_TEST_PROD
 
+jest.mock('#lib/utils/warn')
+
 const DynamicProvide = testProd
   ? require('../../dist/vue-dynamic-provide.common').DynamicProvideMixin
   : require('../../lib').DynamicProvideMixin
@@ -27,6 +29,21 @@ describe('Mixin functionality', () => {
     })
     expect(mixin).toMatchSnapshot()
   })
+
+  it('when no name property is provided, cancels and logs error', () => {
+    const warn = require('#lib/utils/warn.js')
+
+    const mixin = DynamicProvide({
+      name: undefined,
+      inheritAs: '$test',
+      include: [],
+    })
+
+    expect(mixin).toBe(undefined)
+    expect(warn.warn).toHaveBeenCalled()
+    // jest.unmock('#lib/utils/warn')
+  })
+
   it('created correct component options with `inheritAs`', () => {
     const mixin = DynamicProvide({
       name: 'test',
