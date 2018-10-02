@@ -44,7 +44,7 @@ const nodeResolveOptions = {
 }
 
 const input = {
-  input: './src/index.js',
+  input: './lib/index.js',
   external: ['vue'],
 
   plugins: [babel(babelConfig), nodeResolve(nodeResolveOptions), commonjs()],
@@ -70,6 +70,10 @@ const builds = [
   {
     format: 'cjs',
     file: './dist/vue-dynamic-provide.common.js',
+  },
+  {
+    format: 'esm',
+    file: './dist/vue-dynamic-provide.esm.js',
   },
 ]
 
