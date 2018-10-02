@@ -35,8 +35,9 @@ jobs:
 
       # run tests!
       - run: yarn build
+      - run: yarn test:unit
       - run:
-          command: yarn test:unit:ci
+          command: yarn test:coverage
           environment:
             COVERALLS_SERVICE_NAME: CircleCI
             # repo token set in CircleCI project settings
