@@ -3,7 +3,7 @@ import { createGlobalMixin } from '../../lib/mixins/GlobalMixin'
 
 const testProd = !!process.env.VUE_APP_TEST_PROD
 const DynamicProvide = testProd
-  ? require('../../dist/vue-dynamic-provide.common').default
+  ? require('../../dist/VueDynamicProvide.common').default
   : require('../../lib').default
 
 function mountWithPlugin(component, options) {

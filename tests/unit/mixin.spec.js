@@ -4,7 +4,7 @@ const testProd = !!process.env.VUE_APP_TEST_PROD
 jest.mock('#lib/utils/warn')
 
 const DynamicProvide = testProd
-  ? require('../../dist/vue-dynamic-provide.common').DynamicProvideMixin
+  ? require('../../dist/VueDynamicProvide.common').DynamicProvideMixin
   : require('../../lib').DynamicProvideMixin
 
 describe('Mixin functionality', () => {

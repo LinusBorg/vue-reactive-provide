@@ -14,8 +14,8 @@
     "build:roll": "VUE_APP_ROLL=1 rimraf dist && rollup -c && uglifyjs dist/vue-dynamic-provide.umd.js -c -m > dist/vue-dynamic-provide.umd.min.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:unit:prod": "VUE_APP_TEST_PROD=1 vue-cli-service test:unit --coverage",
-    "test:unit:ci": "vue-cli-service test:unit --coverage && cat ./coverage/lcov-report/lcov.info > ./node_modules/.bin/coveralls",
+    "test:unit:prod": "VUE_APP_TEST_PROD=1 vue-cli-service test:unit",
+    "test:unit:ci": "vue-cli-service test:unit --coverage && cat ./coverage/lcov.info > ./node_modules/.bin/coveralls",
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
   "main": "dist/vue-dynamic-provide.common",
