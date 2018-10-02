@@ -39,5 +39,5 @@ jobs:
           command: yarn test:unit:ci
           environment:
             COVERALLS_SERVICE_NAME: CircleCI
-            COVERALLS_REPO_TOKEN: W3cIsDOiFYhLfx4U1EJnbL2QI5fiqkPqn
+            # repo token set in CircleCI project settings
             COVERALLS_SERVICE_JOB_ID: $CIRCLE_BUILD_NUM
