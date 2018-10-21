@@ -18,6 +18,7 @@
     "test:coverage": " cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
+  "sideEffects": false,
   "main": "dist/vue-dynamic-provide.common",
   "browser": "dist/vue-dynamic-provide.umd",
   "files": [
