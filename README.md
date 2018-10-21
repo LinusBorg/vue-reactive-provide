@@ -2,9 +2,10 @@
 
 <p align="center">
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/LinusBorg/vue-reactive-provide)
-[![CircleCI branch](https://img.shields.io/circleci/project/github/LinusBorg/vue-reactive-provide/develop.svg)](https://circleci.com/gh/LinusBorg/vue-reactive-provide/tree/develop)
-[![Coverage Status](https://coveralls.io/repos/github/LinusBorg/vue-reactive-provide/badge.svg?branch=develop)](https://coveralls.io/github/LinusBorg/vue-reactive-provide?branch=develop)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/LinusBorg/vue-reactive-provide)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/LinusBorg/vue-reactive-provide/develop.svg?style=flat-square)](https://circleci.com/gh/LinusBorg/vue-reactive-provide/tree/develop)
+[![Coverage Status](https://coveralls.io/repos/github/LinusBorg/vue-reactive-provide/badge.svg?branch=develop&style=flat-square)](https://coveralls.io/github/LinusBorg/vue-reactive-provide?branch=develop)
+[![npm](https://img.shields.io/npm/v/vue-reactive-provide.svg?style=flat-square)](https://www.npmjs.com/package/vue-reactive-provide)
 
 </p>
 
