@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import DynamicProvide from '#lib/mixins/DynamicProvide'
+import ReactiveProvide from '#lib/mixins/ReactiveProvide'
 import InheritAs from './InheritAs'
 import Child from './Child'
 export default {
@@ -17,7 +17,7 @@ export default {
     InheritAs,
   },
   mixins: [
-    DynamicProvide({
+    ReactiveProvide({
       name: 'test',
       include: ['message', 'testWrapper'],
     }),

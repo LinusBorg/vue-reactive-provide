@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import DynamicProvide from '#lib/mixins/DynamicProvide'
+import ReactiveProvide from '#lib/mixins/ReactiveProvide'
 
 export default {
   name: 'TestMixin',
   props: ['msg', 'name', 'filter'],
   mixins: [
-    DynamicProvide({
+    ReactiveProvide({
       name: 'test',
       props: true,
       include: ['items', 'filteredItems', 'someMethod'],

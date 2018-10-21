@@ -5,13 +5,13 @@ Object {
   "computed": Object {
     "test": [Function],
   },
-  "dynamicProvide": Object {
+  "inject": Object {},
+  "provide": [Function],
+  "reactiveProvide": Object {
     "include": Array [
       "msg",
     ],
     "name": "test",
   },
-  "inject": Object {},
-  "provide": [Function],
 }
 `;

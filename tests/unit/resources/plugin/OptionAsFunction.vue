@@ -5,7 +5,7 @@
 </template>
 
 <script>
-// import DynamicProvide from '#lib/mixins/DynamicProvide'
+// import ReactiveProvide from '#lib/mixins/ReactiveProvide'
 import Child from './Child'
 export default {
   components: {
@@ -15,7 +15,7 @@ export default {
   data: () => ({
     msg: 'Testmessage',
   }),
-  dynamicProvide() {
+  reactiveProvide() {
     return {
       name: this.$options.propsData.injectName,
       include: ['msg'],

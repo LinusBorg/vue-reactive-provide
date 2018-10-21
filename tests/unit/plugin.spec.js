@@ -2,13 +2,13 @@ import { mount, createLocalVue } from '@vue/test-utils'
 import { createGlobalMixin } from '../../lib/mixins/GlobalMixin'
 
 const testProd = !!process.env.VUE_APP_TEST_PROD
-const DynamicProvide = testProd
-  ? require('../../dist/VueDynamicProvide.common').default
+const ReactiveProvide = testProd
+  ? require('../../dist/VueReactiveProvide.common').default
   : require('../../lib').default
 
 function mountWithPlugin(component, options) {
   const _Vue = createLocalVue()
-  _Vue.use(DynamicProvide)
+  _Vue.use(ReactiveProvide)
 
   return mount(component, {
     ...options,
@@ -18,7 +18,7 @@ function mountWithPlugin(component, options) {
 
 describe('The Plugin', () => {
   it('shows Version', () => {
-    const pluginVersion = DynamicProvide.version
+    const pluginVersion = ReactiveProvide.version
     const { version } = require('../../package.json')
 
     expect(pluginVersion).toBe(version)
@@ -29,7 +29,7 @@ describe('The Plugin', () => {
       computed: {},
       provide: {},
       inject: {},
-      dynamicProvide: {
+      reactiveProvide: {
         name: 'test',
         include: ['msg'],
       },
@@ -55,7 +55,7 @@ describe('The Plugin', () => {
       computed: {
         test: expect.any(Function),
       },
-      dynamicProvide: expect.any(Object),
+      reactiveProvide: expect.any(Object),
       provide: expect.any(Function),
     })
 
@@ -68,7 +68,7 @@ describe('The Plugin', () => {
       mixin,
     }
 
-    DynamicProvide.install(Vue)
+    ReactiveProvide.install(Vue)
 
     expect(mixin).toHaveBeenCalledWith(
       expect.objectContaining({

@@ -331,9 +331,9 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.47"
 
-"@babel/plugin-syntax-dynamic-import@7.0.0-beta.47":
+"@babel/plugin-syntax-reactive-import@7.0.0-beta.47":
   version "7.0.0-beta.47"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.0.0-beta.47.tgz#ee964915014a687701ee8e15c289e31a7c899e60"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-reactive-import/-/plugin-syntax-reactive-import-7.0.0-beta.47.tgz#ee964915014a687701ee8e15c289e31a7c899e60"
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.47"
 
@@ -730,13 +730,13 @@
   dependencies:
     "@babel/plugin-proposal-class-properties" "7.0.0-beta.47"
     "@babel/plugin-proposal-decorators" "7.0.0-beta.47"
-    "@babel/plugin-syntax-dynamic-import" "7.0.0-beta.47"
+    "@babel/plugin-syntax-reactive-import" "7.0.0-beta.47"
     "@babel/plugin-syntax-jsx" "7.0.0-beta.47"
     "@babel/plugin-transform-runtime" "7.0.0-beta.47"
     "@babel/preset-env" "7.0.0-beta.47"
     "@babel/runtime" "7.0.0-beta.47"
     babel-helper-vue-jsx-merge-props "^2.0.3"
-    babel-plugin-dynamic-import-node "^2.0.0"
+    babel-plugin-reactive-import-node "^2.0.0"
     babel-plugin-transform-vue-jsx "^4.0.1"
 
 "@vue/cli-overlay@^3.0.4":
@@ -1028,9 +1028,9 @@ accepts@~1.3.4, accepts@~1.3.5:
     mime-types "~2.1.18"
     negotiator "0.6.1"
 
-acorn-dynamic-import@^3.0.0:
+acorn-reactive-import@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/acorn-dynamic-import/-/acorn-dynamic-import-3.0.0.tgz#901ceee4c7faaef7e07ad2a47e890675da50a278"
+  resolved "https://registry.yarnpkg.com/acorn-reactive-import/-/acorn-reactive-import-3.0.0.tgz#901ceee4c7faaef7e07ad2a47e890675da50a278"
   dependencies:
     acorn "^5.0.0"
 
@@ -1407,11 +1407,11 @@ babel-messages@^6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-dynamic-import-node@^2.0.0:
+babel-plugin-reactive-import-node@^2.0.0:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.1.0.tgz#ce874a6a1b97091ae0f56fedef0237c0951ee553"
+  resolved "https://registry.yarnpkg.com/babel-plugin-reactive-import-node/-/babel-plugin-reactive-import-node-2.1.0.tgz#ce874a6a1b97091ae0f56fedef0237c0951ee553"
   dependencies:
-    babel-plugin-syntax-dynamic-import "^6.18.0"
+    babel-plugin-syntax-reactive-import "^6.18.0"
     object.assign "^4.1.0"
 
 babel-plugin-istanbul@^4.1.6:
@@ -1427,9 +1427,9 @@ babel-plugin-jest-hoist@^23.2.0:
   version "23.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-23.2.0.tgz#e61fae05a1ca8801aadee57a6d66b8cefaf44167"
 
-babel-plugin-syntax-dynamic-import@^6.18.0:
+babel-plugin-syntax-reactive-import@^6.18.0:
   version "6.18.0"
-  resolved "http://registry.npmjs.org/babel-plugin-syntax-dynamic-import/-/babel-plugin-syntax-dynamic-import-6.18.0.tgz#8d6a26229c83745a9982a441051572caa179b1da"
+  resolved "http://registry.npmjs.org/babel-plugin-syntax-reactive-import/-/babel-plugin-syntax-reactive-import-6.18.0.tgz#8d6a26229c83745a9982a441051572caa179b1da"
 
 babel-plugin-syntax-object-rest-spread@^6.13.0:
   version "6.13.0"
@@ -8247,7 +8247,7 @@ webpack@^4.15.1:
     "@webassemblyjs/wasm-edit" "1.7.8"
     "@webassemblyjs/wasm-parser" "1.7.8"
     acorn "^5.6.2"
-    acorn-dynamic-import "^3.0.0"
+    acorn-reactive-import "^3.0.0"
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
     chrome-trace-event "^1.0.0"

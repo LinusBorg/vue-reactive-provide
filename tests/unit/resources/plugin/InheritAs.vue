@@ -14,7 +14,7 @@ export default {
     Basic,
     Child,
   },
-  dynamicProvide: {
+  reactiveProvide: {
     name: 'test',
     inheritAs: '$test',
     include: {

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import DynamicProvide from '#lib/mixins/DynamicProvide'
+import ReactiveProvide from '#lib/mixins/ReactiveProvide'
 import Child from './Child'
 export default {
   name: 'Props',
@@ -13,7 +13,7 @@ export default {
     Child,
   },
   mixins: [
-    DynamicProvide({
+    ReactiveProvide({
       name: 'test',
       props: true,
       attrs: ['title'],

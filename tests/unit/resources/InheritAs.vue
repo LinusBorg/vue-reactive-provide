@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import DynamicProvide from '#lib/mixins/DynamicProvide'
+import ReactiveProvide from '#lib/mixins/ReactiveProvide'
 import Basic from './Basic'
 import Child from './Child'
 
@@ -16,7 +16,7 @@ export default {
     Child,
   },
   mixins: [
-    DynamicProvide({
+    ReactiveProvide({
       name: 'test',
       inheritAs: '$test',
       include: {

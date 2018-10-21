@@ -31,7 +31,7 @@ const babelConfig = {
 
 const banner = `
 /*
-  * vue-dynamic-provide
+  * vue-reactive-provide
   * Version: ${version}
   * Licence: MIT
   * (c) Thorsten Lünborg
@@ -52,7 +52,7 @@ const input = {
 
 const output = {
   banner,
-  name: 'VueDynamicProvide',
+  name: 'VueReactiveProvide',
   globals: {
     vue: 'Vue',
   },
@@ -62,18 +62,18 @@ const output = {
 const builds = [
   {
     format: 'umd',
-    file: './dist/vue-dynamic-provide.umd.js',
+    file: './dist/vue-reactive-provide.umd.js',
     globals: {
       vue: 'Vue',
     },
   },
   {
     format: 'cjs',
-    file: './dist/vue-dynamic-provide.common.js',
+    file: './dist/vue-reactive-provide.common.js',
   },
   {
     format: 'esm',
-    file: './dist/vue-dynamic-provide.esm.js',
+    file: './dist/vue-reactive-provide.esm.js',
   },
 ]
 

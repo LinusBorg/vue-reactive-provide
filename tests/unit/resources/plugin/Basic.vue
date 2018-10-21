@@ -5,13 +5,13 @@
 </template>
 
 <script>
-// import DynamicProvide from '#lib/mixins/DynamicProvide'
+// import ReactiveProvide from '#lib/mixins/ReactiveProvide'
 import Child from './Child'
 export default {
   components: {
     Child,
   },
-  dynamicProvide: {
+  reactiveProvide: {
     name: 'test',
     include: ['msg'],
   },

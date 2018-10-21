@@ -15,7 +15,7 @@ export default {
     Child,
     InheritAs,
   },
-  dynamicProvide: {
+  reactiveProvide: {
     name: 'test',
     include: ['message', 'testWrapper'],
   },

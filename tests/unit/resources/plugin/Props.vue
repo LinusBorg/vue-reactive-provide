@@ -11,7 +11,7 @@ export default {
   components: {
     Child,
   },
-  dynamicProvide: {
+  reactiveProvide: {
     name: 'test',
     props: true,
     attrs: ['title'],

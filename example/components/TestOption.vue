@@ -7,7 +7,7 @@
 <script>
 export default {
   name: 'TestOption',
-  dynamicProvide: {
+  reactiveProvide: {
     name: 'test',
     props: true,
     include: ['items', 'filteredItems', 'someMethod'],

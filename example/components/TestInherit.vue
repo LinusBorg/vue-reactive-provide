@@ -6,7 +6,7 @@
 
 <script>
 import TestChild from './TestChild'
-import DynamicProvide from '#lib/mixins/DynamicProvide'
+import ReactiveProvide from '#lib/mixins/ReactiveProvide'
 
 export default {
   name: 'testInherit',
@@ -14,7 +14,7 @@ export default {
     TestChild,
   },
   mixins: [
-    DynamicProvide({
+    ReactiveProvide({
       name: 'test',
       inheritAs: 'testFromParent',
       include: {

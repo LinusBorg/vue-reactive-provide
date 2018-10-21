@@ -5,9 +5,9 @@
 
 import Vue from 'vue'
 import App from './App.vue'
-import DynamicProvide from '#lib'
+import ReactiveProvide from '#lib'
 
-Vue.use(DynamicProvide)
+Vue.use(ReactiveProvide)
 
 Vue.config.productionTip = false
 

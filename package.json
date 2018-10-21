@@ -1,7 +1,7 @@
 {
-  "name": "vue-dynamic-provide",
+  "name": "vue-reactive-provide",
   "version": "0.1.0",
-  "repository": "https://github.com/LinusBorg/vue-dynamic-provide",
+  "repository": "https://github.com/LinusBorg/vue-reactive-provide",
   "author": {
     "name": "Thorsten Lünborg",
     "url": "htps://github.com/LinusBorg/"
@@ -9,9 +9,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name VueDynamicProvide lib/index.js",
+    "build": "vue-cli-service build --target lib --name VueReactiveProvide lib/index.js",
     "build:analyze": "V_APP_ANALYZE=1 yarn build",
-    "build:roll": "VUE_APP_ROLL=1 rimraf dist && rollup -c && uglifyjs dist/vue-dynamic-provide.umd.js -c -m > dist/vue-dynamic-provide.umd.min.js",
+    "build:roll": "VUE_APP_ROLL=1 rimraf dist && rollup -c && uglifyjs dist/vue-reactive-provide.umd.js -c -m > dist/vue-reactive-provide.umd.min.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:prod": "VUE_APP_TEST_PROD=1 vue-cli-service test:unit",
@@ -19,8 +19,8 @@
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
   "sideEffects": false,
-  "main": "dist/vue-dynamic-provide.common",
-  "browser": "dist/vue-dynamic-provide.umd",
+  "main": "dist/vue-reactive-provide.common",
+  "browser": "dist/vue-reactive-provide.umd",
   "files": [
     "/lib"
   ],

@@ -1,14 +1,14 @@
-# vue-dynamic-provide
+# vue-reactive-provide
 
 <p align="center">
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/LinusBorg/vue-dynamic-provide)
-[![CircleCI branch](https://img.shields.io/circleci/project/github/LinusBorg/vue-dynamic-provide/develop.svg)](https://circleci.com/gh/LinusBorg/vue-dynamic-provide/tree/develop)
-[![Coverage Status](https://coveralls.io/repos/github/LinusBorg/vue-dynamic-provide/badge.svg?branch=develop)](https://coveralls.io/github/LinusBorg/vue-dynamic-provide?branch=develop)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/LinusBorg/vue-reactive-provide)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/LinusBorg/vue-reactive-provide/develop.svg)](https://circleci.com/gh/LinusBorg/vue-reactive-provide/tree/develop)
+[![Coverage Status](https://coveralls.io/repos/github/LinusBorg/vue-reactive-provide/badge.svg?branch=develop)](https://coveralls.io/github/LinusBorg/vue-reactive-provide?branch=develop)
 
 </p>
 
-## What is `vue-dynamic-provide`
+## What is `vue-reactive-provide`
 
 It's a Vue plugin and mixin that wraps Vue's own [`provide`](https://vuejs.org/v2/api/#provide-inject) API and makes the object provided to children reactive.
 
@@ -17,9 +17,9 @@ This makes it much easier to pass reactive updates down from the parent componen
 ## Installation
 
 ```
-npm install -D vue-dynamic-provide
+npm install -D vue-reactive-provide
 # or
-yarn add -D vue-dynamic-provide
+yarn add -D vue-reactive-provide
 ```
 
 You can use this library as a pure mixin or use it via an options interface injected with a Plugin.
@@ -28,13 +28,13 @@ To Install the Plugin:
 
 ```javascript
 import Vue from 'vue'
-import DynamicProvide from 'vue-dynamic-provide
+import ReactiveProvide from 'vue-reactive-provide
 
-Vue.use(DynamicProvide)
+Vue.use(ReactiveProvide)
 
 // overwrite the option's name:
-Vue.use(DynamicProvide, {
-  name: 'dynamicProvide, // default value
+Vue.use(ReactiveProvide, {
+  name: 'reactiveProvide, // default value
 })
 ```
 
@@ -49,7 +49,7 @@ Provide:
 export default {
   name: 'Parent',
 
-  dynamicProvide: {
+  reactiveProvide: {
     name: 'nameOfInject',
     include: ['items', 'filteredItems'],
   }

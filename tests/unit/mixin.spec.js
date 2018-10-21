@@ -3,13 +3,13 @@ const testProd = !!process.env.VUE_APP_TEST_PROD
 
 jest.mock('#lib/utils/warn')
 
-const DynamicProvide = testProd
-  ? require('../../dist/VueDynamicProvide.common').DynamicProvideMixin
-  : require('../../lib').DynamicProvideMixin
+const ReactiveProvide = testProd
+  ? require('../../dist/VueReactiveProvide.common').ReactiveProvideMixin
+  : require('../../lib').ReactiveProvideMixin
 
 describe('Mixin functionality', () => {
   it('creates correct component options', () => {
-    const mixin = DynamicProvide({
+    const mixin = ReactiveProvide({
       name: 'test',
       include: [],
     })
@@ -33,7 +33,7 @@ describe('Mixin functionality', () => {
   it('when no name property is provided, cancels and logs error', () => {
     const warn = require('#lib/utils/warn.js')
 
-    const mixin = DynamicProvide({
+    const mixin = ReactiveProvide({
       name: undefined,
       inheritAs: '$test',
       include: [],
@@ -45,7 +45,7 @@ describe('Mixin functionality', () => {
   })
 
   it('created correct component options with `inheritAs`', () => {
-    const mixin = DynamicProvide({
+    const mixin = ReactiveProvide({
       name: 'test',
       inheritAs: '$test',
       include: [],
