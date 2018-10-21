@@ -10,7 +10,6 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name VueReactiveProvide lib/index.js",
-    "build:analyze": "V_APP_ANALYZE=1 yarn build",
     "build:roll": "VUE_APP_ROLL=1 rimraf dist && rollup -c && uglifyjs dist/vue-reactive-provide.umd.js -c -m > dist/vue-reactive-provide.umd.min.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
@@ -20,8 +19,9 @@
   },
   "sideEffects": false,
   "main": "dist/vue-reactive-provide.common",
-  "browser": "dist/vue-reactive-provide.umd",
+  "browser": "dist/vue-reactive-provide.umd.min",
   "files": [
+    "/dist",
     "/lib"
   ],
   "peerDependencies": {
@@ -47,8 +47,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "uglifyjs": "^2.4.11",
     "vue": "^2.5.17",
-    "vue-template-compiler": "^2.5.17",
-    "webpack-bundle-analyzer": "^2.13.1"
+    "vue-template-compiler": "^2.5.17"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

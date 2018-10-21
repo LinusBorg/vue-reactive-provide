@@ -1,6 +1,7 @@
 /.vscode
+/.circleci
+/coverage
 /tests
 /coverage
 /public
-/src/components
-/src/main.js
+/example
