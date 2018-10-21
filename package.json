@@ -6,7 +6,7 @@
     "name": "Thorsten Lünborg",
     "url": "htps://github.com/LinusBorg/"
   },
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name VueReactiveProvide lib/index.js",
