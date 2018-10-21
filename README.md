@@ -140,14 +140,14 @@ This small lib aims to fix these problems. You just tell it which properties of 
 
 ## Options
 
-| Option    | Required | Type (Default)            | Description                                                                                                                          |
-| --------- | -------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| name      | yes      | `string` (`undefined`)    | The name under which to `provide` the object                                                                                         |
-| include   | no       | `string[]` (`false`)      | An array of strings, each a property name of the component                                                                           |
-| props     | no       | `string[]|true` (`false`) | When `true`: provide all `$props` properties on the object. Also an array of strings is allowed                                      |
-| attrs     | no       | `string[]|true` (`false`) | Works like the `props` option, but for $attrs                                                                                        |
-| listeners | no       | `string[]|true` (`false`) | Works like the `props` option, but for $listeners                                                                                    |
-| inheritAs | no       | `string|false`(`false`)   | When set with a string: inherit the injection with name `name` from a parent component as `string`. See 'Advanced Usage' for details |
+| Option    | Required | Type (Default)             | Description                                                                                                                          |
+| --------- | -------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| name      | yes      | `string` (`undefined`)     | The name under which to `provide` the object                                                                                         |
+| include   | no       | `string[]` (`false`)       | An array of strings, each a property name of the component                                                                           |
+| props     | no       | `string[]\|true` (`false`) | When `true`: provide all `$props` properties on the object. Also an array of strings is allowed                                      |
+| attrs     | no       | `string[]\|true` (`false`) | Works like the `props` option, but for $attrs                                                                                        |
+| listeners | no       | `string[]\|true` (`false`) | Works like the `props` option, but for $listeners                                                                                    |
+| inheritAs | no       | `string\|false`(`false`)   | When set with a string: inherit the injection with name `name` from a parent component as `string`. See 'Advanced Usage' for details |
 
 ## Advanced Usage
 
