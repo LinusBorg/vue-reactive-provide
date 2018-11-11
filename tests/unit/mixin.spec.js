@@ -31,6 +31,9 @@ describe('Mixin functionality', () => {
   })
 
   it('when no name property is provided, cancels and logs error', () => {
+    // Test relying on a mock can't work when testing pro build
+    if (testProd) return
+
     const warn = require('#lib/utils/warn.js')
 
     const mixin = ReactiveProvide({

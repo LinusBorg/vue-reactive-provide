@@ -1,6 +1,6 @@
 {
   "name": "vue-reactive-provide",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "https://github.com/LinusBorg/vue-reactive-provide",
   "author": {
     "name": "Thorsten Lünborg",
@@ -18,8 +18,8 @@
     "test:unit:w": "vue-cli-service test:unit --watch"
   },
   "sideEffects": false,
-  "main": "dist/vue-reactive-provide.common",
-  "browser": "dist/vue-reactive-provide.umd.min",
+  "main": "dist/VueReactiveProvide.common",
+  "browser": "dist/VueReactiveProvide.umd.min",
   "files": [
     "/dist",
     "/lib"

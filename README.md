@@ -2,9 +2,10 @@
 
 <p align="center">
 
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/LinusBorg/vue-reactive-provide)
-[![CircleCI branch](https://img.shields.io/circleci/project/github/LinusBorg/vue-reactive-provide/develop.svg)](https://circleci.com/gh/LinusBorg/vue-reactive-provide/tree/develop)
-[![Coverage Status](https://coveralls.io/repos/github/LinusBorg/vue-reactive-provide/badge.svg?branch=develop)](https://coveralls.io/github/LinusBorg/vue-reactive-provide?branch=develop)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/LinusBorg/vue-reactive-provide)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/LinusBorg/vue-reactive-provide/develop.svg?style=flat-square)](https://circleci.com/gh/LinusBorg/vue-reactive-provide/tree/develop)
+[![Coverage Status](https://coveralls.io/repos/github/LinusBorg/vue-reactive-provide/badge.svg?branch=develop&style=flat-square)](https://coveralls.io/github/LinusBorg/vue-reactive-provide?branch=develop)
+[![npm](https://img.shields.io/npm/v/vue-reactive-provide.svg?style=flat-square)](https://www.npmjs.com/package/vue-reactive-provide)
 
 </p>
 
@@ -139,14 +140,14 @@ This small lib aims to fix these problems. You just tell it which properties of 
 
 ## Options
 
-| Option    | Required | Type (Default)            | Description                                                                                                                          |
-| --------- | -------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| name      | yes      | `string` (`undefined`)    | The name under which to `provide` the object                                                                                         |
-| include   | no       | `string[]` (`false`)      | An array of strings, each a property name of the component                                                                           |
-| props     | no       | `string[]|true` (`false`) | When `true`: provide all `$props` properties on the object. Also an array of strings is allowed                                      |
-| attrs     | no       | `string[]|true` (`false`) | Works like the `props` option, but for $attrs                                                                                        |
-| listeners | no       | `string[]|true` (`false`) | Works like the `props` option, but for $listeners                                                                                    |
-| inheritAs | no       | `string|false`(`false`)   | When set with a string: inherit the injection with name `name` from a parent component as `string`. See 'Advanced Usage' for details |
+| Option    | Required | Type (Default)             | Description                                                                                                                          |
+| --------- | -------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| name      | yes      | `string` (`undefined`)     | The name under which to `provide` the object                                                                                         |
+| include   | no       | `string[]` (`false`)       | An array of strings, each a property name of the component                                                                           |
+| props     | no       | `string[]\|true` (`false`) | When `true`: provide all `$props` properties on the object. Also an array of strings is allowed                                      |
+| attrs     | no       | `string[]\|true` (`false`) | Works like the `props` option, but for $attrs                                                                                        |
+| listeners | no       | `string[]\|true` (`false`) | Works like the `props` option, but for $listeners                                                                                    |
+| inheritAs | no       | `string\|false`(`false`)   | When set with a string: inherit the injection with name `name` from a parent component as `string`. See 'Advanced Usage' for details |
 
 ## Advanced Usage
 
