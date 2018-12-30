@@ -61,7 +61,7 @@ describe('Mixin functionality', () => {
         test: expect.any(Function),
       },
       inject: {
-        $test: 'test',
+        $test: { from: 'test', default: {} },
       },
       watch: {
         test: {
