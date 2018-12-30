@@ -7,7 +7,10 @@ Object {
     "test": [Function],
   },
   "inject": Object {
-    "$test": "test",
+    "$test": Object {
+      "default": Object {},
+      "from": "test",
+    },
   },
   "provide": [Function],
   "watch": Object {
