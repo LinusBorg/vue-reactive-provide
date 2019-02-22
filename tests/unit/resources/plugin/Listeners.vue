@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Child/>
+    <Child />
   </div>
 </template>
 
@@ -19,5 +19,4 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

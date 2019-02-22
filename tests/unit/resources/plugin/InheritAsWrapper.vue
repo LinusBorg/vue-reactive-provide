@@ -1,7 +1,7 @@
 <template>
   <div>
     <InheritAs>
-      <Child/>
+      <Child />
     </InheritAs>
   </div>
 </template>
