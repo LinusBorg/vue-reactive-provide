@@ -8,7 +8,7 @@ module.exports = {
           {
             useBuiltIns: false,
             modules: false,
-            targets: '> 1 %, not dead, last 2 versions, no ie <= 11',
+            targets: ['> 1%', 'not dead', 'last 2 versions', 'not ie <= 11'],
           },
         ],
   ],
