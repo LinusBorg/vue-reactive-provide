@@ -83,6 +83,16 @@ describe('Mixin functionality', () => {
     })
   })
 
+  it('Func: provides working injection when `include` is a function', () => {
+    const wrapper = mount(require('./resources/BasicFunc.vue').default)
+
+    const child = wrapper.find({ name: 'child' })
+
+    expect(child.vm.test).toMatchObject({
+      msg: 'Testmessage',
+    })
+  })
+
   it('Props/Attrs: provides props & attrs', () => {
     const wrapper = mount(require('./resources/Props.vue').default, {
       propsData: {
