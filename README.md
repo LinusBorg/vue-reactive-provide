@@ -147,8 +147,8 @@ This small lib aims to fix these problems. You just tell it which properties of 
 | props           | no       | `boolean` (`false`)      | Provide all `$props` properties on the object.                                                                                       |
 | attrs           | no       | `boolean` (`false`)      | Works like the `props` option, but for \$attrs                                                                                       |
 | listeners       | no       | `boolean` (`false`)      | Works like the `props` option, but for \$listeners                                                                                   |
-| nameForComputed | no       | `string|false` (`false`) | Name for the computed prop that this plugin adds to the component. When no set, the `name` will be used.                             |
-| inheritAs       | no       | `string|false` (`false`) | When set with a string: inherit the injection with name `name` from a parent component as `string`. See 'Advanced Usage' for details |
+| nameForComputed | no       | `string\|false` (`false`) | Name for the computed prop that this plugin adds to the component. When no set, the `name` will be used.                             |
+| inheritAs       | no       | `string\|false` (`false`) | When set with a string: inherit the injection with name `name` from a parent component as `string`. See 'Advanced Usage' for details |
 
 ## Advanced Usage
 
